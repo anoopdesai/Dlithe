@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>JSString</title>
+   
+  </head>
+  <body>
+     <script>
+         var str1="Hello";
+         var str2="Word";
+         var str3=str1.concat(str2);
+         document.write("<h3>"+str3+"</h3>");
+         var str4=str3.toLowerCase();
+         document.write("<h3>"+str4+"</h3>");
+         var str5=str4.toUpperCase();
+         document.write("<h3>"+str5+"</h3>");
+         var str6="    Hello   ";
+         document.write("<h3>"+str6.trim()+"</h3>");
+         document.write("<h3>"+str6.slice(2,5)+"</h3>");
+         var str7="Welcome to JavaScript";
+         document.write("<h3>"+str7.indexOf("J")+"</h3>");
+         document.write("<h3>"+str7.lastIndexOf()+"</h3>");
+        
+         for(var i=0;i<5;i++)
+            document.write("<h3>"+str7[i]+"</h3>");
+         
+         for(var a of str7){
+            document.write("<h3>"+a+"</h3>");
+
+         }
+      </script>
+  </body>
+</html>
