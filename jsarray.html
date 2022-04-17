@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSrray</title>
+</head>
+<body>
+    <script>
+        
+        var names=["Anoop","Shane","Aneeas","Mango"];
+        document.write(names+"<br><hr>");
+        document.write(names.length+"<br><hr>")
+        /* Push*/
+        names.push("Vishal","Sainath");
+        document.write(names+"<br><hr>");
+        /* unsift*/
+        names.unshift("Sudeep");
+        document.write(names+"<br><hr>");
+        /*pop*/
+        var l=names.pop();
+        document.write(l+"<br><hr>");
+        document.write(names+"<br><hr>");
+        /*shift*/
+        names.shift();
+        document.write(names+"<br><hr>");
+
+        var sports=["Swimming","Cycling","Batminton","Tennis"];
+        document.write(sports+"<br><hr>");
+        //splice(start,deletecount,item1,item2)
+        sports.splice(2,0,"chess");
+        document.write(sports+"<br><hr>");
+        sports.splice(2,1);
+        document.write(sports+"<br><hr>");
+
+        //concat
+        var num=[000,001,002,003];
+        var num1=[100,106,107];
+        var num2=num.concat(num1);
+        document.write(num2+"<br><hr>");
+        var num3=["one","two"];
+        var num4=num2.concat(num3);
+        document.write(num4+"<br><hr>");
+        //entries()-displays the key/value pairs for each index in the array
+        var index=num4.entries();
+        for(var item of index){
+
+            document.write(item+"<br>");
+
+        }
+        num4.reverse();
+        document.write(num4+"<br><hr>");
+
+        document.write(num4.toString()+"<br><hr>");
+        document.write(num4.join()+"<br><hr>");
+        document.write(num4.sort()+"<br><hr>");
+        
+        
+        //sort
+        var s=[001,600,200,900];
+        
+        document.write(s.sort()+"<br><hr>");
+
+        var courses=["HTML","SQL","CSS","JAVASCRIPT","DOTNET"];
+        var result=courses.filter(courses=>courses.length==4);
+        document.write(result);
+
+  </script>
+</body>
+</html>
